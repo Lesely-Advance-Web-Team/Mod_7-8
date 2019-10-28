@@ -15,16 +15,24 @@
       </path>
     </svg>
   </div>
-  
+
     <?php include 'header.php' ?>
     <?php include 'nav.php' ?>
-
-
-        <form action="" method="POST" enctype="multipart/form-data">
+<main>
+    <p><h4><b> Please join our community by posting your fashion to this global photo directory.</b></h4>
+    <br>    <h4>Once you click browse, you can slect as many photos as you wantm then click upload and it will show up on the home page for everyone to see.</h4></p>
+    <br>
+    <br>
+    <form action="" method="POST" enctype="multipart/form-data">
             <input type="file" name="userfile[]" value="" multiple="">
             <input type="submit" name="submit" value="Upload">
         </form>
+</main>
+
+    <?php include 'footer.php' ?>
+
     </body>
+</html>
 
 <?php
 
