@@ -1,5 +1,5 @@
 <header>
-    <h1>Welcome to Mod7 Custom Photobook CSM</h1>
+    <h1>Welcome to Mod7 Custom Photobook CMS</h1>
     <br>
-    <h3>Our Group Final CSM</h3>
+    <h3>Our Group Final CMS</h3>
 </header>
