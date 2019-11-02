@@ -18,7 +18,7 @@
     <?php include 'nav.php' ?>
     <main>
         <?php
-        $mysqli = new mysqli('localhost','root','Secur3Passw0rd!','images') or die($mysqli->connect_error);
+        $mysqli = new mysqli('138.201.81.134','modphoto_vbowie','Secur3Passw0rd!','modphoto_fashion') or die($mysqli->connect_error);
         $table = 'fashion';
         
         $result = $mysqli->query("SELECT * FROM $table") or die($mysqli->error);
