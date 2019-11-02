@@ -49,7 +49,7 @@ Be creative, but also remember that you only have a week to complete the assignm
     | 3 | img_dir      | varchar(255) | 
     
 - **Write PHP code that reads data from the database**
-  - In the upload.php file I added the following code to read from the database:
+  - In the index.php file I added the following code to read from the database:
 ```  
         <?php
         $mysqli = new mysqli('localhost','root','Secur3Passw0rd!','images') or die($mysqli->connect_error);
@@ -65,7 +65,7 @@ Be creative, but also remember that you only have a week to complete the assignm
         ?>
 ```
 - **Write PHP code that adds data to the database**
-  - In the upload.php file I added the following code to read from the database:
+  - In the upload.php file I added the following code to add images to the database:
 ```  
 <?php
 $mysqli = new mysqli('localhost','root','Secur3Passw0rd!','images') or die($mysqli->connect_error);
