@@ -21,8 +21,6 @@ Be creative, but also remember that you only have a week to complete the assignm
   - We used MAMP to run the servers for this project. MAMP was already downloaded and configured to my computer. I then created a a repo in GitHub and linked it to my Visual Studio. I added my code for this application in a index.php file.
 - **Use PHP include to practice DRY programmin and build content templates**
   - I took the header, navigation, and footer pieces into another folder and customized. In the index file I used PHP include to practice DRY programing method.
-    - This image represents the use of DRY programing: 
-    ![alt text](https://designmanagementlucerne.files.wordpress.com/2015/11/client-server-side.png?w=552&h=285 "Server-side Code vs Client-side Code")
     - Server-side code is running on Apache server via WAMP and has PHP DRY code. The format of our code includes several practices of the DRY method. For example iIt starts off with html at the top and includes the php files to supoort the site below. I used it for our header, nav, and footer.  I used function `function getPostTitlesFromDatabase()` to pull data from the database.. 
   - Some files and functions that are included are the following:
     - Local – to store images from local.
