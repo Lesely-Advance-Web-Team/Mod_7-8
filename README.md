@@ -170,7 +170,7 @@ function pre_r($array){
   - I bought the domain name from http://www.Namecheap.com and then used http://www.FreeHosting.com to host the site:
   - I uploaded my files to the public html file. 
     - We had to update the details in the index.php and upload.php files to ensure that it would be communicating with the database via http://www.FreeHosting.com
-  - Check out our website: mod7photobook.club
+  - Check out our website: https://www.mod7photobook.club
 
   
 
