@@ -21,7 +21,7 @@ Be creative, but also remember that you only have a week to complete the assignm
   - We used MAMP to run the servers for this project. MAMP was already downloaded and configured to my computer. I then created a a repo in GitHub and linked it to my Visual Studio. I added my code for this application in a index.php file.
 - **Use PHP include to practice DRY programmin and build content templates**
   - I took the header, navigation, and footer pieces into another folder and customized. In the index file I used PHP include to practice DRY programing method.
-    - Server-side code is running on Apache server via WAMP and has PHP DRY code. The format of our code includes several practices of the DRY method. For example iIt starts off with html at the top and includes the php files to supoort the site below. I used it for our header, nav, and footer.  I used function `function getPostTitlesFromDatabase()` to pull data from the database.. 
+    - Server-side code is running on Apache server via WAMP and has PHP DRY code. The format of our code includes several practices of the DRY method. For example, It starts off with html at the top and includes the php files to support the site below. I used it for our header, nav, and footer. I used function getPostTitlesFromDatabase() to pull data from the database.
   - Some files and functions that are included are the following:
     - Local – to store images from local.
     - Web - to store images that were uploaded to the database.
@@ -40,8 +40,9 @@ Be creative, but also remember that you only have a week to complete the assignm
 
 **Use a Database:**
 - **Use phpMyAdmin to administer and create a new MySQL database**
-  - `CREATE DATABASE images` 
-  - Then created Our table "fashion" which has the following feilds: ID, name, img_dir. ID was set to AI & Primary.
+  - Used SQLQuery CRUDE: `CREATE DATABASE modphoto_fashion`
+  - Then created Our table "fashion" which has the following fields: ID, name, img_dir. ID was set to AI & Primary.
+
   - | # | Name         |     Type     |
     | - |:------------:| ------------:|
     | 1 | ID           |   int(11)    |
@@ -52,7 +53,7 @@ Be creative, but also remember that you only have a week to complete the assignm
   - In the index.php file I added the following code to read from the database:
 ```  
         <?php
-        $mysqli = new mysqli('localhost','root','Secur3Passw0rd!','images') or die($mysqli->connect_error);
+ $mysqli = new mysqli('138.201.81.134','modphoto_vbowie','Secur3Passw0rd!','modphoto_fashion') or die($mysqli->connect_error);
         $table = 'fashion';
         
         $result = $mysqli->query("SELECT * FROM $table") or die($mysqli->error);
@@ -68,7 +69,7 @@ Be creative, but also remember that you only have a week to complete the assignm
   - In the upload.php file I added the following code to add images to the database:
 ```  
 <?php
-$mysqli = new mysqli('localhost','root','Secur3Passw0rd!','images') or die($mysqli->connect_error);
+$mysqli = new mysqli('138.201.81.134','modphoto_vbowie','Secur3Passw0rd!','modphoto_fashion') or die($mysqli->connect_error);
 $table = 'fashion';
 
 $phpFileUploadErrors = array(
@@ -154,16 +155,22 @@ function pre_r($array){
 ---
 **Use Client-side code:**
 - **Use JS to access content from the DOM**
-  - Our client-side code includes JS which accesses content from the DOM. Our code includes the code: `document.getElementsByTagName('body')` which returned the body node from the DOM. We also used `getElementById` to get elements with the matching ID and to get elements with matching class we used `getElementsByClassName`
-- **What kinds of functionality would it be better to do on the client side rather than on the server?**
-  - Functionalities that would be better to do on the client side rather than on the server, would be simple interactions such as allowing the user to sort their table or put filters on their images they plan to upload. These actoins will be much faster on the client-side.
-- **What kind of POST requests would you have in your Blog CMS?**
-  - The types of POST requests that is inserted into our Blog CMS would allow users to share their location experiences when they travel. They would share post that has a title, their alias (*so we know who it is from*). They’d also share the location, date, and a brief description of their experience.
+  - Our client-side code includes JS which accesses content from the DOM. Our code includes the code: document.getElementsByTagName('body') which returned the body node from the DOM. We also used getElementById to get elements with the matching ID and to get elements with matching class we used getElementsByClassName. We also used it for customizing the header.
+- **What kind of POST requests did you have in your CMS?**
+  - The types of POST requests that is inserted into our Photobook CMS would allow users to share cool fashion. They would share post as an image that has a title.
+  
 ---
-
-**You must use Github workflow:**
+**Use Github workflow & Host Site:**
 - Create a Github organization for your team ( We did this by doing the following below)
   - Create a team repo owned by the organization
+    - https://github.com/Lesely-Advance-Web-Team/Mod_7-8
   - We used GIT fork, pull requests, merge workflow
   - We wrote our response in Markdown format
+- Host Your Site:
+  - I bought the domain name from http://www.Namecheap.com and then used http://www.FreeHosting.com to host the site:
+  - I uploaded my files to the public html file. 
+    - We had to update the details in the index.php and upload.php files to ensure that it would be communicating with the database via http://www.FreeHosting.com
+  - Check out our website: mod7photobook.club
+
+  
 
